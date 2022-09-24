@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Surface Plane
+  Surface Planet
  
 </details>
 
@@ -60,27 +60,44 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Frustrerend
+  Alles opgelezen
+  Moeite met swipen
+  Wist niet hoe ze moest klikken
+  <img src="readme-images/screenreader_katarina.jpeg" alt="screenreader">
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Dingen kunnen skippen
+  Beter aangeven hoe te swipen
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  In de nav een klein lijntje / onduidelijk
+  Met rood omcirkeld in de active state 
+  <img src="readme-images/tabben_katarina.jpeg" alt="tabben">
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Duidelijker in de nav aangeven
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  Werkte nog steeds omdat het niet zoveel acties heeft op het homescherm
+  <img src="ballon_katarina.jpeg" alt ="ballon">
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  -
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Periphical field loss: via de zijkant kijken
+  Central Field Loss: witte letters minder goed zichtbaar: Groene kleine letters minder goed zichtbaar
+  Cataract: Sommige lettertypes zijn onduidelijk
+  <img src="verlorenvisie_katarina.jpeg" alt ="verloren visie">
 
+  Kleurverhouding is goed, ze mengen niet met elkaar
+  Goed contrast nog steeds
+  <img src="kleurvisie_katarina.jpeg" alt="verloren visie">
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Lettertypes duidelijker maken
 </details>
 
 
@@ -91,13 +108,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschets_menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
