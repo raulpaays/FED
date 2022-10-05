@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Surface Planet
+  Surface Plane
  
 </details>
 
@@ -128,17 +128,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Moest nog beginnen, dus nog niet zo goed bezig. Nog geen screenshots omdat er nog aan gewerkt moest worden.
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  - Moest nog beginnen, dus nog niet zo goed bezig. Nog geen screenshots omdat er nog aan gewerkt moest worden.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -160,16 +150,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Nog steeds niet ver, wel oefeningen gemaakt maar niet begonnen met HTML CSS
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -230,23 +210,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  - Het ging wel goed, ik was al een eind op weg maar nog steeds niet klaar.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  Laatste vragen gesteld, zoals hoe je de slider aantrekkelijker en duidelijker kan maken, beantwoord gekregen.
-  Nog laatste CSS doen.
+  - Laatste vragen gesteld, zoals hoe je de slider aantrekkelijker en duidelijker kan maken, beantwoord gekregen.
+  - Nog laatste CSS doen.
 
 </details>
 
@@ -260,19 +230,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/homepage.pdf" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/nieuws.pdf" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb leren animeren
+  <img src="./readme-images/codegeleerd.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  De toegankelijkheid zou ik me meer in willen verdiepen, met name de screenreader.
+  Het responsive maken.
 </details>
 
 
@@ -313,6 +286,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   22. Audio 1: https://www.youtube.com/watch?v=DL_1PXfatWA
   23. Audio 2: https://www.youtube.com/watch?v=_QilHig98EM
 
+  24. Code bron 1: https://css-tricks.com/ 
+  25. Code bron 2: https://www.w3schools.com/
+  26. Code bron 3: https://stackoverflow.com/ 
 
 
 

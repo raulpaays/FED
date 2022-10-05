@@ -358,6 +358,7 @@ h2 {
 	justify-content: center;
 	margin-left: 2%;
 	margin-right: 2%;
+	margin-top: 2%;
 	padding:2%;
 	background-color:white;
 }
@@ -402,7 +403,8 @@ h2 {
 label {
 	color: grey;
 }
-input[type=text] {
+
+input[type=text] /* Bron: https://www.w3schools.com/css/tryit.asp?filename=trycss_form_focus2 */ {
 	width: 80%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -620,7 +622,7 @@ iframe {
 #nieuws section:nth-child(4) p:nth-child(2),
 
 #nieuws section:nth-child(7) p:nth-child(2) {
-	color:rgb(214, 214, 214);
+	color: black;
 	font-size: x-small;
 	margin-left:6%;
 }
