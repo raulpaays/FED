@@ -48,97 +48,228 @@ body {
 
 /* Navigatie */
 
+header {
+	position:sticky;
+	top:0;
+}
 header nav {
 	display:flex;
 	align-items: center;
-	padding:6%;
+	padding:3%;
 	background-color:var(--color-nintendo);
-	position:fixed;
-	top:0;
 	box-shadow: 0 2px 4px var(--color-text2);
 }
 
-nav section {
+nav {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-nav img:first-child {
-	width: 17%;
+nav a img {
+	width: 60%;
+	transition: 1s;
+	transition-timing-function: cubic-bezier(.31,-0.35,.12,1.58);
 }
-nav img:nth-child(2) {
-	width: 22%;
+nav a:nth-child(5) img:hover, 
+nav a:nth-child(6) img:hover,
+nav a:nth-child(7) img:hover {
+	transform: scale(1.2);
 }
 
-nav section img:first-child, nav section img:nth-child(2), nav section img:nth-child(3) {
-	width: 11%;
+nav a:nth-child(2) {
+	width: 200%;
 }
+
+nav img:nth-child(3) {
+	width: 10%;
+	margin-right: 5em;
+
+	/* Code hieronder van https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right */
+
+	position: relative;
+	animation: linear infinite;
+	animation-name: run;
+	animation-duration: 2s;
+}
+
+@keyframes run {
+	0% {
+	  left: 0;
+	}
+	50% {
+	  left: 20%;
+	}
+	100% {
+	  left: 0;    
+	}
+  }
 
 /* Hamburger menu */
 
 nav ul.open {
 	display: grid;
 	grid-template-columns:1fr 1fr 1fr; /* ervoor gezet */
-	padding:2em;
-	padding-bottom:30em;
-	margin-top:54em;
-	margin-left: -2em;
-	
-	
+	margin-top:40em;
+	padding-bottom: 11em;
+	transition: 1s;
 }
+
+nav ul.open li:first-child {
+	grid-column: 1 / -1;
+	width: 20%;
+	padding-top:5em;
+	padding-bottom:3em;
+}
+
+nav ul.open li a svg:first-child {
+	width: 70%;
+	background-color: var(--color-nintendo);
+	border-radius: 0.5em;
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2); 
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+}
+
+/* CSS voor de details van het Nintendo Switch Online icoon */
+.st0{fill:#FFFFFF;}
+.st1{fill:#E60012;}
+.st2{fill:none;stroke:#E60012;stroke-width:13;stroke-miterlimit:10;}
+.st3{fill:#FFFFFF;stroke:#E60012;stroke-width:13;stroke-miterlimit:10;}
+
+/* CSS voor de details van het nieuws icoon */
+.st0{fill:#FFFFFF;}
+.st1{fill:none;stroke:#E60012;stroke-width:13;stroke-miterlimit:10;}
+.st2{fill:#E60012;}
+.st3{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#E60012;stroke-width:13;stroke-miterlimit:10;}
+.st4{fill:#FFFFFF;stroke:#E60012;stroke-width:13;stroke-miterlimit:10;}
 
 nav ul {
 	position:fixed;
-	display: none; /*Zichtbaar */
-	background-color: rgba(0, 0, 0, 0.844);
-	
+	display: none; /* Zichtbaar */
+	background-color: rgba(255, 255, 255, 0.984);
 	list-style-type: none;
 }
 
-nav ul li {
-	width:200%;
+nav ul.open li {
+	color:var(--color-nintendo);
 }
+
+nav ul li {
+	width:100%;
+}
+
+nav ul li:nth-child(2) svg,
+nav ul li:nth-child(3) svg,
+nav ul li:nth-child(4) svg {
+	transition: 0.5s;
+	transition-timing-function: cubic-bezier(.93,-0.72,.09,1.47);
+
+}
+nav ul li:nth-child(2) svg:hover,
+nav ul li:nth-child(3) svg:hover,
+nav ul li:nth-child(4) svg:hover {
+	transform:scale(1.2);	
+}
+
+@keyframes nieuwshover {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+nav ul li:nth-child(5) svg:hover {
+	transform: scale(1.2);
+	animation-name: nieuwshover;
+	animation-duration: 1.5s;
+}
+
+nav ul li:nth-child(6) a img, 
+nav ul li:nth-child(7) a img,
+nav ul li:nth-child(8) a img,
+nav ul li:nth-child(9) a img,
+nav ul li:nth-child(10) a img {
+	width:70%;
+	background-color: var(--color-nintendo);
+	border-radius: 0.5em;
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2); 
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+	transition: 0.5s;
+	transition-timing-function: cubic-bezier(.93,-0.72,.09,1.47);
+}
+
+nav ul.open li img:hover {
+	transform: scale(1.2);
+}
+
+
 
 /* Homepagina */
 
 /* (Deze is voor de afbeeldingen van binnenkort uit */
-main article section:nth-child(4) article:nth-child(2) img,
-main article section:nth-child(4) article:nth-child(3) img,
+#home section:nth-child(4) article:nth-child(2) img,
+#home section:nth-child(4) article:nth-child(3) img,
 
-main article section:nth-child(3) img {
+#home section:nth-child(3) img {
 	width: 100%;
 }
 
 
-
-main article ul {
+#home ul {
 	display: flex;
-	align-items: center;
+	flex-direction: row;
 	list-style-type: none;
 	overflow-y: scroll;
 	padding-left: 0;
 	margin-bottom:0em;
+	padding:1em;
+} 
+
+
+#home ul li img {
+	max-height: 24em;
+	margin-top: 2em;
+	width:auto;
+	height: 16em;
+	border-radius: 1em;
+	margin:2em;
+	transition: 0.7s;
+	transition-timing-function: cubic-bezier(.31,-0.35,.12,1.58);
+	-webkit-box-shadow: 5px 5px 22px 5px rgba(0,0,0,0.25); 
+	box-shadow: 5px 5px 22px 5px rgba(0,0,0,0.25);
 }
 
-main article ul li img {
-	max-height: 24em;
-	margin-top: 3em;
+#home ul li img:hover {
+	transform:scale(1.2);
+}
+
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-text);
+	border-radius: 20em;
+	
+}
+
+::-webkit-scrollbar {
+	width:1%;
 }
 
 
 /* Binnenkort uit */
 
-main article section:nth-child(4) {
+#home section:nth-child(4) {
 	margin-bottom: 10%;
 }
 
-main article section:nth-child(4) article:nth-child(2), 
-main article section:nth-child(4) article:nth-child(3){
+#home section:nth-child(4) article:nth-child(2), 
+#home section:nth-child(4) article:nth-child(3){
 	margin: 2%;
 }
 
-main article section:nth-child(4) article:nth-child(2) p, 
-main article section:nth-child(4) article:nth-child(3) p {
+#home section:nth-child(4) article:nth-child(2) p, 
+#home section:nth-child(4) article:nth-child(3) p {
 	text-align: center;
 	background-color: var(--color-text);
 	color: var(--color-nintendo);
@@ -163,18 +294,20 @@ h1 {
 }
 
 h2 {
-	margin:2%;
 	color:var(--color-text);
 	background-color: var(--color-nintendo);
 	padding: 3%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom:0%;
 }
 
-main article section:nth-child(3) article:nth-child(2), 
-main article section:nth-child(3) article:nth-child(3),
+#home section:nth-child(3) article:nth-child(2), 
+#home section:nth-child(3) article:nth-child(3),
 /*  Speciaal voor onlangs uitgekomen */
-main article section:nth-child(6) article:nth-child(2),
-main article section:nth-child(6) article:nth-child(3),
-main article section:nth-child(6) article:nth-child(4)
+#home section:nth-child(6) article:nth-child(2),
+#home section:nth-child(6) article:nth-child(3),
+#home section:nth-child(6) article:nth-child(4)
 {
 	display: flex;
 	background-color: var(--color-text);
@@ -184,28 +317,28 @@ main article section:nth-child(6) article:nth-child(4)
 	padding:3%;
 }
 
-main article section:nth-child(3) article:nth-child(2) div, 
-main article section:nth-child(3) article:nth-child(3) div, 
+#home section:nth-child(3) article:nth-child(2) div, 
+#home section:nth-child(3) article:nth-child(3) div, 
 
-main article section:nth-child(6) article:nth-child(2) div, 
-main article section:nth-child(6) article:nth-child(3) div,
-main article section:nth-child(6) article:nth-child(4) div {
+#home section:nth-child(6) article:nth-child(2) div, 
+#home section:nth-child(6) article:nth-child(3) div,
+#home section:nth-child(6) article:nth-child(4) div {
 	margin-left: 3%;
 } 
 
-main article section:nth-child(3) article:nth-child(2) img, 
-main article section:nth-child(3) article:nth-child(3) img, 
-main article section:nth-child(6) img {
+#home section:nth-child(3) article:nth-child(2) img, 
+#home section:nth-child(3) article:nth-child(3) img, 
+#home section:nth-child(6) img {
 	width: 40%;
 	height: 40%;
 	border-radius: 0.5em;
 }
 
-main article article:nth-child(6) img{
+#home article:nth-child(6) img{
 	width: 100%;
 }
 
-main article section a, main article section:nth-child(6) a {
+#home section a, #home section:nth-child(6) a {
 	background-color: var(--color-text);
 	display: flex;
 	justify-content: flex-end;
@@ -215,12 +348,12 @@ main article section a, main article section:nth-child(6) a {
 	color: var(--color-nintendo);
 	border-bottom-left-radius: 0.5em;
 	border-bottom-right-radius: 0.5em;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 
 /* Winactie van de week */
 
-main article article:nth-child(5) div:nth-child(2) {
+#home section:nth-child(5) div:nth-child(2) {
 	display: flex;
 	justify-content: center;
 	margin-left: 2%;
@@ -229,11 +362,11 @@ main article article:nth-child(5) div:nth-child(2) {
 	background-color:white;
 }
 
-main article article:nth-child(5) div:nth-child(2) img {
+#home section:nth-child(5) div:nth-child(2) img {
 	width: 100%;
 }
 
-main article article:nth-child(5) div:nth-child(3) {
+#home section:nth-child(5) div:nth-child(3) {
 	display: flex;
 	justify-content: space-evenly;
 	margin-left: 2%;
@@ -241,13 +374,13 @@ main article article:nth-child(5) div:nth-child(3) {
 	background-color: var(--color-text);
 	padding: 3%;
 }
-main article article:nth-child(5) div:nth-child(3) img {
+#home section:nth-child(5) div:nth-child(3) img {
 	width: 20%;
 	height:20%;
 	
 }
 
-main article article:nth-child(5) div:nth-child(3) button {
+#home section:nth-child(5) div:nth-child(3) button {
 	color: var(--color-text);
 	border-radius: 25em;
 	padding:3%;
@@ -255,9 +388,300 @@ main article article:nth-child(5) div:nth-child(3) button {
 	background-color:#367dbf;
 	background-image:linear-gradient(to right, #367dbf, #65bbbc);
 	font-family: var(--lettertype);
+	transition: 0.7s;
+	transition-timing-function: cubic-bezier(.31,-0.35,.12,1.58);
+}
+
+#home section:nth-child(5) div:nth-child(3) button:hover {
+	transform: scale(1.2);
+}
+
+/* Formulier aanmelden voor nieuwsbrief */
+
+
+label {
+	color: grey;
+}
+input[type=text] {
+	width: 80%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	font-family: var(--lettertype);
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+  }
+
+  input[type=text]:focus {
+	color: var(--color-nintendo);
+  }
+  
+  input[type=text]:hover {
+	border: 3px solid var(--color-nintendo);
+  }
+
+  #home article:last-child p {
+	color: black;
+	text-align: center;
+  }
+
+  #home section:nth-child(7) article:last-child {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding:2em;
+	margin:2%;
+	background-color: var(--color-text);
+	margin-bottom: 2em;
+  }
+
+  #home article:last-child button {
+	color: var(--color-text2);
+	border-radius: 25em;
+	margin:1em;
+	padding:3%;
+	border-style: solid;
+	background-color:var(--color-text);
+	border-color: var(--color-nintendo);
+	font-family: var(--lettertype);
+	transition: 0.7s;
+	transition-timing-function: cubic-bezier(.31,-0.35,.12,1.58);
+  }
+
+  #home article:last-child button:hover {
+	transform: scale(1.2);
+	background-color: var(--color-nintendo);
+	color: var(--color-text);
+
+
+  }
+
+
+
+/* Nieuws pagina */
+
+.draai svg {
+	animation-name: draaiend-nieuws;
+	animation-duration: .3s;
 }
 
 
+@keyframes draaiend-nieuws {
+	0% {
+		transform:rotate(0);
+	  }
+	  100% {
+		transform:rotate(1turn);
+	  }
+}
+
+#nieuws {
+	margin: 2%;
+}
+
+#nieuws section:first-child p:nth-child(2) {
+	margin-top:0%;
+	text-align: center;
+	color: rgb(129, 129, 129);
+	background-color: var(--color-text);
+	padding:0.5em;
+}
+
+#nieuws section:first-child div img {
+	width: 20%;
+	height: 20%;
+}
+#nieuws section:first-child div {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-nintendo);
+}
+
+h4 {
+	text-align: center;
+	background-color: var(--color-text);
+	color: grey;
+	margin-top:0%;
+	padding:1em;
+	margin-bottom:0%;
+}
+
+#nieuws section article a  {
+	text-decoration: none;
+}
+
+
+#nieuws section:first-child article p {
+	text-align: center;
+	background-color: var(--color-text);
+	color:var(--color-text2);
+	padding: 1em;
+	margin-top:0.2em;
+	border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
+
+#nieuws section:first-child article {
+	display: flex;
+	flex-direction: column;
+	transition: 1s;
+}
+
+#nieuws section:first-child article:hover {
+	transform:scale(1.02);
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2); 
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+}
+
+
+
+#nieuws section:first-child article img {
+	width: 100%;
+}
+
+/* Nieuwste YouTube video's */
+
+#nieuws section:nth-child(2) ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	list-style-type: none;
+	padding:0;
+}
+
+#nieuws section:nth-child(2) ul li {
+	padding-bottom: 4em;
+	margin:0.3em;
+	transition: 1s;
+	
+}
+
+#nieuws section:nth-child(2) ul li:hover {
+	transform: scale(1.07);
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(230,0,18,0.2); 
+	box-shadow: 5px 5px 15px 5px rgba(230,0,18,0.2);
+}
+
+#nieuws section:nth-child(2) ul li p {
+	color:var(--color-text2);
+	background-color: var(--color-text);
+	margin-top:0;
+	padding:1em;
+	font-size: 2.7vw;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 5/1;
+}
+
+#nieuws a:nth-child(3) {
+	background-color: var(--color-text);
+	display: flex;
+	justify-content: flex-end;
+	padding:3%;
+	margin-left:1%;
+	margin-right:1%;
+	margin-top: -6%;
+	color: var(--color-nintendo);
+	border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+	margin-bottom: 10%;
+}
+
+/* Socials (Twitter en Facebook berichten) */
+
+#nieuws section:nth-child(4) div, 
+
+#nieuws section:nth-child(7) div {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-nintendo);
+}
+
+#nieuws section:nth-child(4) div img,
+
+#nieuws section:nth-child(7) div img  {
+	width: 10%;
+	height: 10%;
+	margin-left:1em;
+	margin-right: 1em;
+}
+
+#nieuws section:nth-child(4), 
+
+#nieuws section:nth-child(7) {
+	background-color: var(--color-text);
+	padding-bottom: 1em;
+}
+
+#nieuws section:nth-child(4) p:nth-child(2),
+
+#nieuws section:nth-child(7) p:nth-child(2) {
+	color:rgb(214, 214, 214);
+	font-size: x-small;
+	margin-left:6%;
+}
+
+#nieuws section:nth-child(4) p:nth-child(3), 
+#nieuws section:nth-child(4) p:nth-child(4),
+
+#nieuws section:nth-child(7) p:nth-child(3), 
+#nieuws section:nth-child(7) p:nth-child(4){
+	color:grey;
+	margin-left:6%;
+}
+
+#nieuws section:nth-child(4) p:nth-child(4) a,
+
+#nieuws section:nth-child(6) p:nth-child(4) a{
+	color:var(--color-nintendo);
+}
+
+#nieuws section:nth-child(4) img:nth-child(5),
+
+#nieuws section:nth-child(7) img:nth-child(5) {
+	width: 90%;
+	margin-left:auto;
+	margin-right: auto;
+	display: block;
+}
+
+#nieuws a:nth-child(5), #nieuws a:nth-child(8) {
+	background-color: var(--color-text);
+	display: flex;
+	justify-content: flex-end;
+	padding:3%;
+	margin-top:2%;
+	color: var(--color-nintendo);
+	border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+	margin-bottom: 10%;
+}
+
+#nieuws img:nth-child(6) {
+	width: 20%;
+	position: relative;
+	animation: linear infinite;
+	animation-name: run2;
+	animation-duration: 3s;
+	margin-bottom: 2em
+}
+
+@keyframes run2 {
+	0% {
+	  left: 0;
+	}
+	50% {
+	  left: 90%;
+	}
+	100% {
+	  left: 0;
+	  transform: scaleX(-1);    
+	}
+  }
 
 
 /* Footer */
@@ -274,6 +698,11 @@ footer article:nth-child(2) {
 
 footer article:nth-child(2) img {
 	width:10%;
+	transition: 1s;
+}
+
+footer article:nth-child(2) img:hover {
+	transform:scale(1.2);
 }
 
 footer article {
@@ -287,7 +716,19 @@ footer article:nth-child(3) {
 	background-color: rgb(169, 2, 2);
 	color: var(--color-background);
 	padding: 6%;
-	font-size: small;
+	font-size: x-small;
 }
+
+footer article:last-child section p {
+	transition: 1s;
+}
+
+footer article:last-child section p:hover {
+	transform:scale(1.5);
+	font-weight: 600;
+	color: var(--color-text2);
+}
+
+
 
 
