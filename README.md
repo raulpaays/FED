@@ -246,6 +246,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   De toegankelijkheid zou ik me meer in willen verdiepen, met name de screenreader.
   Het responsive maken.
+
+  ### Feedback eindgesprek:
+  HTML verbeteren
 </details>
 
 
